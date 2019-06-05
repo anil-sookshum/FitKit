@@ -10,6 +10,8 @@ fun String.fromDartType(): DataType {
         "height" -> DataType.TYPE_HEIGHT
         "weight" -> DataType.TYPE_WEIGHT
         "calories" -> DataType.TYPE_CALORIES_EXPENDED
+        "distance" -> DataType.TYPE_DISTANCE_DELTA
+        "activity" -> DataType.TYPE_ACTIVITY_SAMPLES
         else -> throw Exception("type $this is not supported")
     }
 }

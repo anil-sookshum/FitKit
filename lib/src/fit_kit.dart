@@ -35,9 +35,13 @@ class FitKit {
         return "weight";
       case DataType.CALORIES:
        return "calories";
+      case DataType.DISTANCE:
+        return "distance";
+      case DataType.ACTIVITY:
+      return "activity";
     }
     throw Exception('dataType $type not supported');
   }
 }
 
-enum DataType { HEART_RATE, STEP_COUNT, HEIGHT, WEIGHT, CALORIES }
+enum DataType { HEART_RATE, STEP_COUNT, HEIGHT, WEIGHT, CALORIES , DISTANCE, ACTIVITY}
